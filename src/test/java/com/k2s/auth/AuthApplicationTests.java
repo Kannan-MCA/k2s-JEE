@@ -1,10 +1,10 @@
-package com.k2s.configserver;
+package com.k2s.auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConfigserverApplicationTests {
+class AuthApplicationTests {
 
 	@Test
 	void contextLoads() {
