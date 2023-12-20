@@ -4,16 +4,13 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.Instant;
-
-/**
- * @author mhmdz
- * Created By Zeeshan on 20-05-2023
- * @project oauth-jwt
- */
-
+@Getter
+@Setter
 @Entity
 @Data
 @AllArgsConstructor
@@ -32,5 +29,6 @@ public class RefreshToken {
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private UserInfo userInfo;
+
 
 }
