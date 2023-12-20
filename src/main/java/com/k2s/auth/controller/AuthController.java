@@ -1,4 +1,4 @@
- controller;
+package com.k2s.auth.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +9,7 @@ import com.k2s.auth.services.JwtTockenServices;
 @RestController
 public class AuthController {
 
-	@RequestMapping("/auth")
+	@GetMapping("/auth")
 	
 	private final JwtTockenServices jwtTockenServices;
 	
